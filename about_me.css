@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(62, 122, 182);
+}
+h1{
+    font-size: 24pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(190, 255, 255);
+}
+p{
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(190,255,255);
+}
+#pp{
+    float: left;
+    margin-right: 10px;
+}
+#game_link{
+    font-style: italic;
+    margin-top: 50px;
+    text-align: center;
+}
+#game_icon{
+    width: 250px;
+    height: 250px;
+}
