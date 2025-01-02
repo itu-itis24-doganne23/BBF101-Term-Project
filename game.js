@@ -49,7 +49,9 @@ function update_lives(){
     for (let i = 0; i < lives; i++) {
         hearts[i].src = "heart.svg";
     }
-    hearts[lives].src = "broken_heart.svg";
+    if (lives != 3){
+        hearts[lives].src = "broken_heart.svg";
+    }
     for (let j = 0; j < 3-lives; j++) {   
         setTimeout(function(){
             hearts[2-j].src = "blank.svg";
@@ -73,6 +75,7 @@ function reset(){
     pred_input.value = "";
     open_letter_list = [0,0,0,0,0];
     reset_button.style.display = "none";
+    move = 0;
 }
 function is_won() {
     if (lives === 0) {
