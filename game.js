@@ -55,11 +55,9 @@ function update_lives(){
 }
 function won_game(){
     window.alert("Congratulation!\nYou Win");
-    reset();
 }
 function lost_game(){
     window.alert("Game Over!\nTry Again");
-    reset();
 }
 
 function reset(){
