@@ -7,19 +7,24 @@ p,label{
     font-family: 'Times New Roman', Times, serif;
 }
 #letter1{
-    height: 350px
+    height: 150px;
+    margin-right: 10px;
 }
 #letter2{
-    height: 350px
+    height: 150px;
+    margin-right: 10px;
 }
 #letter3{
-    height: 350px
+    height: 150px;
+    margin-right: 10px;
 }
 #letter4{
-    height: 350px
+    height: 150px;
+    margin-right: 10px;
 }
 #letter5{
-    height: 350px
+    height: 150px;
+    margin-right: 10px;
 }
 .letters{
     display: inline-block;
@@ -68,4 +73,5 @@ h1{
     font-size: 22pt;
     width: 200px;
     border: solid 2px;
+    margin-bottom: 10px;
 }
