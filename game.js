@@ -49,8 +49,11 @@ function update_lives(){
     for (let i = 0; i < lives; i++) {
         hearts[i].src = "heart.svg";
     }
-    for (let j = 0; j < 3-lives; j++) {
-        hearts[2-j].src = "blank.svg";
+    hearts[lives].src = "broken_heart.svg";
+    for (let j = 0; j < 3-lives; j++) {   
+        setTimeout(function(){
+            hearts[2-j].src = "blank.svg";
+        }, 200);
     }
 }
 function won_game(){
