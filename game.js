@@ -101,10 +101,11 @@ submit_button.addEventListener("click", ()=>{
         move++;
         pred_input.value = "";
     }
-
 });
 reset_button.addEventListener("click",reset);
 
-/*
-enter göndersin
-*/
+pred_input.addEventListener("keypress",function (e){
+    if (e.key == "Enter") {
+        submit_button.click();
+    }
+});
