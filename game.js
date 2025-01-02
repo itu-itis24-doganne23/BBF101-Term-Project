@@ -38,9 +38,11 @@ function prediction(text){
 function open_letter(text) {
     for (let i=0;i<text.length;i++){
         let index = prediction_word.indexOf(text[i]);
-        open_letter_list[index] = 1;
-        letters[index].src = "letters/" + text[i] + ".svg";
-        score_p.textContent = "Score: " + String(parseInt(score_p.textContent.slice(-2)) + 20);
+        if (open_letter_list[index] != 1){
+            open_letter_list[index] = 1;
+            letters[index].src = "letters/" + text[i] + ".svg";
+            score_p.textContent = "Score: " + String(parseInt(score_p.textContent.slice(-2)) + 20);
+        }
     }
 }
 function update_lives(){
