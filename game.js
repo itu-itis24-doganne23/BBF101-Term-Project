@@ -91,7 +91,7 @@ function list_sum(arr) {
 }
 
 submit_button.addEventListener("click", ()=>{
-    let word = pred_input.value;
+    let word = pred_input.value.toLowerCase();
     if (word.length != 0) {
         if (move == 0) {
             reset_button.style.display = "inline";
