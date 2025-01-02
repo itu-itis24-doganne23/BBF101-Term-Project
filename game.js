@@ -28,10 +28,10 @@ function prediction(text){
     }else{
         text = text.toLowerCase();
         if (text === prediction_word){
-            score_p.textContent = 100;
             open_letter(text);
+            score_p.textContent = "Score: 100";
         }else{
-            lives = 3;
+            lives = 0;
         }
     }
 }
@@ -96,13 +96,13 @@ submit_button.addEventListener("click", ()=>{
         prediction(word);
         setTimeout(is_won, 500);
         move++;
+        pred_input.value = "";
     }
 
 });
 reset_button.addEventListener("click",reset);
 
 /*
-aynı harf puan kazandırıyor
 kalp azalmıyo
 enter göndersin
 inputu sıfırla
