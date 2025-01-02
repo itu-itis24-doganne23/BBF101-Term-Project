@@ -15,10 +15,10 @@ const hearts = [heart1,heart2,heart3];
 const prediction_word = "synth";
 let lives = 3;
 let open_letter_list = [0,0,0,0,0];
+let move = 0;
 
 function prediction(text){
     if (text.length === 1){
-        console.log("here");
         if (prediction_word.includes(text)) {
             open_letter(text);
         }else {
@@ -66,6 +66,7 @@ function reset(){
     }
     pred_input.value = "";
     open_letter_list = [0,0,0,0,0];
+    reset_button.style.display = "none";
 }
 function is_won() {
     if (lives === 0) {
@@ -87,9 +88,20 @@ function list_sum(arr) {
 submit_button.addEventListener("click", ()=>{
     let word = pred_input.value;
     if (word.length != 0) {
+        if (move == 0) {
+            reset_button.style.display = "inline";
+        }
         prediction(word);
         setTimeout(is_won, 500);
+        move++;
     }
 
 });
 reset_button.addEventListener("click",reset);
+
+/*
+aynı harf puan kazandırıyor
+kalp azalmıyo
+enter göndersin
+inputu sıfırla
+*/
