@@ -47,7 +47,10 @@ function open_letter(text) {
 }
 function update_lives(){
     for (let i = 0; i < lives; i++) {
-        hearts.src = "heart.svg";
+        hearts[i].src = "heart.svg";
+    }
+    for (let j = 0; j < 3-lives; j++) {
+        hearts[2-j].src = "blank.svg";
     }
 }
 function won_game(){
@@ -94,7 +97,7 @@ submit_button.addEventListener("click", ()=>{
             reset_button.style.display = "inline";
         }
         prediction(word);
-        setTimeout(is_won, 500);
+        setTimeout(is_won, 300);
         move++;
         pred_input.value = "";
     }
@@ -103,7 +106,5 @@ submit_button.addEventListener("click", ()=>{
 reset_button.addEventListener("click",reset);
 
 /*
-kalp azalmıyo
 enter göndersin
-inputu sıfırla
 */
