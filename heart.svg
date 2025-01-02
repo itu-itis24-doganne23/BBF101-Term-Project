@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="heart.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.3772587"
+     inkscape:cx="398.98096"
+     inkscape:cy="511.52336"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Katman 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect2"
+       style="fill:#ff0000;stroke-width:0.264583"
+       d="m 62.639472,98.621289 a 35.35965,36.648144 45 0 0 -2.279044,49.329661 l -0.141413,0.14141 51.891155,51.89116 0.002,-0.002 0.005,0.005 51.89116,-51.89116 -0.0819,-0.0819 a 36.648144,35.35965 45 0 0 -2.33861,-49.389214 36.648144,35.35965 45 0 0 -49.32965,-2.279048 l -0.14141,-0.141414 -0.001,0.0015 -0.005,-0.0051 -0.0819,0.08185 a 35.35965,36.648144 45 0 0 -49.389218,2.338606 z" />
+  </g>
+</svg>
