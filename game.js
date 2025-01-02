@@ -62,7 +62,9 @@ function won_game(){
     window.alert("Congratulation!\nYou Win");
 }
 function lost_game(){
+    update_lives();
     window.alert("Game Over!\nTry Again");
+    submit_button.disabled = true;
 }
 
 function reset(){
@@ -76,6 +78,7 @@ function reset(){
     open_letter_list = [0,0,0,0,0];
     reset_button.style.display = "none";
     move = 0;
+    submit_button.disabled = false;
 }
 function is_won() {
     if (lives === 0) {
@@ -97,7 +100,7 @@ function list_sum(arr) {
 submit_button.addEventListener("click", ()=>{
     let word = pred_input.value.toLowerCase();
     if (word.length != 0) {
-        if (move == 0) {
+        if (move == 0 ) {
             reset_button.style.display = "inline";
         }
         prediction(word);
