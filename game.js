@@ -60,6 +60,7 @@ function update_lives(){
 }
 function won_game(){
     window.alert("Congratulation!\nYou Win");
+    submit_button.disabled = true;
 }
 function lost_game(){
     update_lives();
