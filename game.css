@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(200,200,250);
+    text-align: center;
+}
+p,label{
+    font-size: 22pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+#letter1{
+    height: 350px
+}
+#letter2{
+    height: 350px
+}
+#letter3{
+    height: 350px
+}
+#letter4{
+    height: 350px
+}
+#letter5{
+    height: 350px
+}
+.letters{
+    display: inline-block;
+}
+.game_info{
+    display: flex;
+}
+.predict_part {
+    margin: 0 auto;
+}
+.liveNscore {
+    text-align: right;
+    margin-right: 100px;
+}
+.lives_part{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+#heart1{
+    height: 50px;
+}
+#heart2{
+    height: 50px;
+}
+#heart3{
+    height: 50px;
+}
+#reset_button{
+    display: none;
+    width: 150px;
+    height: 37px;
+    background-color: blue;
+    color: white;
+}
+#submit_button{
+    background-color: rgb(190,255,255);
+    width: 150px;
+    height: 37px;
+}
+h1{
+    font-size: 32pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+#prediction_input{
+    font-size: 22pt;
+    width: 200px;
+    border: solid 2px;
+}

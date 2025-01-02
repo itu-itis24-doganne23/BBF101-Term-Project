@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Word Prediction Game</title>
+    <link rel="stylesheet" href="game.css">
 </head>
 <body>
     <h1>Word Prediction Game</h1>
     <div class="letters">
-        <img src="card.svg" alt="card" id="letter1" style="height: 400px">
-        <img src="card.svg" alt="card" id="letter2" style="height: 400px">
-        <img src="card.svg" alt="card" id="letter3" style="height: 400px">
-        <img src="card.svg" alt="card" id="letter4" style="height: 400px">
-        <img src="card.svg" alt="card" id="letter5" style="height: 400px">
+        <img src="card.svg" alt="card" id="letter1">
+        <img src="card.svg" alt="card" id="letter2">
+        <img src="card.svg" alt="card" id="letter3">
+        <img src="card.svg" alt="card" id="letter4">
+        <img src="card.svg" alt="card" id="letter5">
     </div>
-    <div class="game_info" style="display: inline-block;">
-        <div class="predict_part" style="float: left;margin-right: 500px;">
+    <div class="game_info">
+        <div class="predict_part">
             <label>Prediction:<input id="prediction_input" type="text"></label>
             <br>
             <button id="submit_button" type="button">Submit</button>
             <br>
-            <button id="reset_button" type="button" style="display: none;">Reset the Game</button>
+            <button id="reset_button" type="button">Reset the Game</button>
         </div>
-        <div class="liveNscore" style="float: right;">
+        <div class="liveNscore">
             <p id="score">Score: 0</p> 
-            <div class="lives_part" style="display: inline-block;">
-                <p style="float: left;">Lives: </p>
-                <img src="heart.svg" alt="heart" id="heart1" style="height: 50px;">
-                <img src="heart.svg" alt="heart" id="heart2" style="height: 50px;">
-                <img src="heart.svg" alt="heart" id="heart3" style="height: 50px;">
+            <div class="lives_part">
+                <p>Lives: </p>
+                <img src="heart.svg" alt="heart" id="heart1">
+                <img src="heart.svg" alt="heart" id="heart2">
+                <img src="heart.svg" alt="heart" id="heart3">
             </div>
         </div>
     </div>
